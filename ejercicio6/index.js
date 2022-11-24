@@ -18,6 +18,9 @@ for (var llave in pedro) {
     }
   }
 //Agrégale al objeto una función llamada saluda 
-pedro.saluda= function() { return "Hola, me llamo " + pedro.nombre} 
+pedro.saluda= function() { return "Hola, me llamo " + this.nombre}
+//pedro.saluda= ()=> { return "Hola, me llamo " + this.nombre} 
+//con this.nombre no retorna el valor 
+
 //Llama la función saluda y verifica el resultado
 console.log(pedro.saluda())
